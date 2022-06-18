@@ -15,9 +15,14 @@ class PostController(
         postService.create(postReq)
     }
 
+    @PutMapping
+    fun update(@RequestBody postReq: PostReq) {
+        postService.create(postReq)
+    }
+
     @GetMapping
     fun getList() = postService.getListAll()
 
     @GetMapping("/{id}")
-    fun getPost(@PathVariable("id") id : Long) = postService.findPostById(id)
+    fun getPost(@PathVariable("id") id: Long) = postService.findPostById(id)
 }

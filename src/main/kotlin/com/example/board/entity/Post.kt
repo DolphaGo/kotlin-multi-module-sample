@@ -15,18 +15,19 @@ data class Post(
     var id: Long? = null,
 
     @Column(name = "author")
-    val author: String,
+    var author: String,
 
     @Column(name = "title")
-    val title: String,
+    var title: String,
 
     @Column(name = "content")
-    val content: String,
+    var content: String,
 ) {
-
     @CreatedDate
-    var createDate: Date = Date()
+    @Column(name = "create_date", nullable = false, updatable = false)
+    var createDate: Date? = Date()
 
     @LastModifiedDate
+    @Column(name = "update_date", nullable = false)
     var updateDate: Date = Date()
 }
