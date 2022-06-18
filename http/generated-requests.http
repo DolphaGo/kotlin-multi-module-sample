@@ -1,0 +1,16 @@
+###
+POST http://localhost:8080/api/v1/posts
+Content-Type: application/json
+
+{
+  "author": "DolphaGo",
+  "title": "test title3",
+  "content": "test content3"
+}
+
+###
+GET http://localhost:8080/api/v1/posts
+
+<> 2022-06-19T000318.200.json
+<> 2022-06-19T000258.200.json
+
