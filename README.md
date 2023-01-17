@@ -1,4 +1,4 @@
-# kotlin-board
+# kotlin-multi-module-sample
 코프링 연습용 게시판 멀티모듈 뼈대 샘플
 
 > 모듈 구성
