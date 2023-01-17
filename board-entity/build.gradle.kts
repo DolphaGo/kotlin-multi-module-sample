@@ -5,3 +5,9 @@ val bootJar: BootJar by tasks
 
 bootJar.enabled = false
 jar.enabled = true
+
+dependencies {
+    implementation(Dependencies.JPA)
+    implementation(Dependencies.MYSQL)
+    kapt(Dependencies.JPA_KAPT)
+}

@@ -22,5 +22,11 @@ ext {
 apply<JibConfigPlugin>()
 
 dependencies {
+    implementation(project(":board-entity"))
+
     implementation(Dependencies.API)
+    implementation(Dependencies.JPA)
+    implementation(Dependencies.FEIGN)
+    implementation(Dependencies.REDIS)
+    kapt(Dependencies.JPA_KAPT)
 }

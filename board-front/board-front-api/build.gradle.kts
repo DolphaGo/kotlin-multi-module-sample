@@ -28,6 +28,7 @@ ext {
 
 dependencies {
     implementation(Dependencies.API)
+    implementation(Dependencies.FEIGN)
 }
 
 apply<JibConfigPlugin>()
