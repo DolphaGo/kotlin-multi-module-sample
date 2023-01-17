@@ -23,6 +23,7 @@ apply<JibConfigPlugin>()
 
 dependencies {
     implementation(project(":board-entity"))
+    implementation(project(":board-support"))
 
     implementation(Dependencies.API)
     implementation(Dependencies.JPA)

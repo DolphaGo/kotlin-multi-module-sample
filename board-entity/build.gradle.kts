@@ -7,6 +7,8 @@ bootJar.enabled = false
 jar.enabled = true
 
 dependencies {
+    implementation(project(":board-support"))
+
     implementation(Dependencies.JPA)
     implementation(Dependencies.MYSQL)
     kapt(Dependencies.JPA_KAPT)

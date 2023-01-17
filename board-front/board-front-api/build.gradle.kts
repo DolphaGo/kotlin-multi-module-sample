@@ -27,6 +27,7 @@ ext {
 }
 
 dependencies {
+    implementation(project(":board-support"))
     implementation(Dependencies.API)
     implementation(Dependencies.FEIGN)
 }
