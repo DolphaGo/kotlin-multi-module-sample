@@ -15,5 +15,8 @@
   - SpringBoot + Kotlin
 - board-entity
   - SpringBoot + Kotlin
+  - MySQL
 - board-support
   - SpringBoot + Kotlin
+- buildSrc
+  - Project Library and Version Management
